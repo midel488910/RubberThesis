@@ -22,47 +22,152 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.sidePanel = New System.Windows.Forms.Panel()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
+        Me.logoPanel = New System.Windows.Forms.Panel()
+        Me.sideTopPanel = New System.Windows.Forms.Panel()
+        Me.topPanel = New System.Windows.Forms.Panel()
+        Me.minButton = New System.Windows.Forms.Button()
+        Me.exitButton = New System.Windows.Forms.Button()
+        Me.sidePanel.SuspendLayout()
+        Me.topPanel.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'sidePanel
+        '
+        Me.sidePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.sidePanel.Controls.Add(Me.Guna2Button4)
+        Me.sidePanel.Controls.Add(Me.Guna2Button1)
+        Me.sidePanel.Controls.Add(Me.logoPanel)
+        Me.sidePanel.Controls.Add(Me.sideTopPanel)
+        Me.sidePanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.sidePanel.Location = New System.Drawing.Point(0, 0)
+        Me.sidePanel.Name = "sidePanel"
+        Me.sidePanel.Size = New System.Drawing.Size(226, 841)
+        Me.sidePanel.TabIndex = 2
+        '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button4.Font = New System.Drawing.Font("MS Reference Sans Serif", 14.25!)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
+        Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button4.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Guna2Button4.Location = New System.Drawing.Point(0, 279)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.Size = New System.Drawing.Size(226, 55)
+        Me.Guna2Button4.TabIndex = 5
+        Me.Guna2Button4.Text = "Analysis"
         '
         'Guna2Button1
         '
+        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.Font = New System.Drawing.Font("MS Reference Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(117, 121)
+        Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
+        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button1.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Guna2Button1.Location = New System.Drawing.Point(0, 224)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button1.TabIndex = 0
-        Me.Guna2Button1.Text = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(226, 55)
+        Me.Guna2Button1.TabIndex = 2
+        Me.Guna2Button1.Text = "Dashboard"
         '
-        'CartesianChart1
+        'logoPanel
         '
-        Me.CartesianChart1.Location = New System.Drawing.Point(370, 278)
-        Me.CartesianChart1.Name = "CartesianChart1"
-        Me.CartesianChart1.Size = New System.Drawing.Size(200, 100)
-        Me.CartesianChart1.TabIndex = 1
-        Me.CartesianChart1.Text = "CartesianChart1"
+        Me.logoPanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.logoPanel.Location = New System.Drawing.Point(0, 50)
+        Me.logoPanel.Name = "logoPanel"
+        Me.logoPanel.Size = New System.Drawing.Size(226, 174)
+        Me.logoPanel.TabIndex = 1
+        '
+        'sideTopPanel
+        '
+        Me.sideTopPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(163, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.sideTopPanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.sideTopPanel.Location = New System.Drawing.Point(0, 0)
+        Me.sideTopPanel.Name = "sideTopPanel"
+        Me.sideTopPanel.Size = New System.Drawing.Size(226, 50)
+        Me.sideTopPanel.TabIndex = 0
+        '
+        'topPanel
+        '
+        Me.topPanel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.topPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(163, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.topPanel.Controls.Add(Me.minButton)
+        Me.topPanel.Controls.Add(Me.exitButton)
+        Me.topPanel.Location = New System.Drawing.Point(223, 0)
+        Me.topPanel.Name = "topPanel"
+        Me.topPanel.Size = New System.Drawing.Size(952, 50)
+        Me.topPanel.TabIndex = 3
+        '
+        'minButton
+        '
+        Me.minButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.minButton.BackColor = System.Drawing.Color.Transparent
+        Me.minButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.minButton.Font = New System.Drawing.Font("Calibri", 12.0!)
+        Me.minButton.Location = New System.Drawing.Point(876, 12)
+        Me.minButton.Name = "minButton"
+        Me.minButton.Size = New System.Drawing.Size(29, 27)
+        Me.minButton.TabIndex = 5
+        Me.minButton.Text = "-"
+        Me.minButton.UseVisualStyleBackColor = False
+        '
+        'exitButton
+        '
+        Me.exitButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.exitButton.BackColor = System.Drawing.Color.Transparent
+        Me.exitButton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.exitButton.Font = New System.Drawing.Font("Calibri", 12.0!)
+        Me.exitButton.Location = New System.Drawing.Point(911, 12)
+        Me.exitButton.Name = "exitButton"
+        Me.exitButton.Size = New System.Drawing.Size(29, 27)
+        Me.exitButton.TabIndex = 4
+        Me.exitButton.Text = "X"
+        Me.exitButton.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 729)
-        Me.Controls.Add(Me.CartesianChart1)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.ClientSize = New System.Drawing.Size(1176, 841)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.topPanel)
+        Me.Controls.Add(Me.sidePanel)
+        Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.sidePanel.ResumeLayout(False)
+        Me.topPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-
+    Friend WithEvents sidePanel As Panel
+    Friend WithEvents sideTopPanel As Panel
+    Friend WithEvents topPanel As Panel
+    Friend WithEvents exitButton As Button
+    Friend WithEvents logoPanel As Panel
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents CartesianChart1 As LiveCharts.WinForms.CartesianChart
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents minButton As Button
 End Class
