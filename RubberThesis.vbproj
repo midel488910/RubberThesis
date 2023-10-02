@@ -143,5 +143,17 @@
   <ItemGroup>
     <None Include="pictures\cross.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\dashboard-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\layout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
