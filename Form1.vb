@@ -21,7 +21,7 @@ Public Class Form1
     End Sub
 
     Public Function GetCurrentPercentage() As Integer
-        Dim percentage As Integer = 0
+        Dim milliLiter As Integer = 0
         Try
             Connect()
             Dim query As String = "SELECT percentage FROM ultrasonic_data WHERE datetime <= NOW() ORDER BY datetime DESC LIMIT 1"
@@ -32,7 +32,7 @@ Public Class Form1
 
             While reader.Read()
                 query = "SELECT percentage FROM ultrasonic_data WHERE datetime <= NOW() ORDER BY datetime DESC LIMIT 1"
-                percentage = Convert.ToInt32(reader("percentage"))
+                milliLiter = Convert.ToInt32(reader("milliLiter"))
             End While
             'percentageGauge.Value = percentage
 
@@ -42,7 +42,7 @@ Public Class Form1
             conn.Close()
         End Try
 
-        Return percentage
+        Return milliLiter
     End Function
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
